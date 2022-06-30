@@ -4,6 +4,10 @@
     width: 600px;
     margin: auto;
     padding-left: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: rgb(176, 164, 164);
+    padding-top: 10px;
 }
 .fname,.lname,.email,.password{
     margin-left: 10px;
