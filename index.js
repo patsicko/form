@@ -89,18 +89,24 @@ submit.addEventListener("click",(e)=>{
     e.preventDefault();
     
 
-
     let address=new MyObject(fName.value,lName.value,email.value,password.value);
     fName.value="";
     lName.value="";
     email.value="";
     password.value="";
 
-
-
  for(id in address){
     console.log(`${id}:${address[id]}`);
  }
+
+
+
+ let addressB=new MyObject("John","Doe","john@gmail.com","jo123@2022");
+
+ for(id in addressB){
+    console.log(`${id}:${addressB[id]}`);
+ }
+
 
 
 //    myObject.fname=fName.value;
