@@ -69,25 +69,53 @@ form.appendChild(submit);
 body.appendChild(form);
 console.log(form);
 
-let myObject={
 
-};
+function MyObject(fName,lName,email,password){
+
+this.fName=fName;
+this.lName=lName;
+this.email=email;
+this.password=password;
+}
+
+
+
+
+// let myObject={
+
+// };
 
 submit.addEventListener("click",(e)=>{
     e.preventDefault();
-   myObject.fname=fName.value;
-   fName.value="";
-   myObject.lname=lName.value;
-   lName.value="";
-   myObject.email=email.value;
-   email.value="";
+    
 
-   myObject.password=password.value;
-   password.value="";
 
-   for(id in myObject){
-    console.log(`${id}:${myObject[id]}`);
-   }
+    let address=new MyObject(fName.value,lName.value,email.value,password.value);
+    fName.value="";
+    lName.value="";
+    email.value="";
+    password.value="";
+
+
+
+ for(id in address){
+    console.log(`${id}:${address[id]}`);
+ }
+
+
+//    myObject.fname=fName.value;
+//    fName.value="";
+//    myObject.lname=lName.value;
+//    lName.value="";
+//    myObject.email=email.value;
+//    email.value="";
+
+//    myObject.password=password.value;
+//    password.value="";
+
+//    for(id in myObject){
+//     console.log(`${id}:${myObject[id]}`);
+//    }
 
 
 })
