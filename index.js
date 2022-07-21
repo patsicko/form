@@ -98,14 +98,12 @@ submit.addEventListener("click",(e)=>{
  for(id in address){
     console.log(`${id}:${address[id]}`);
  }
+ 
+//  let addressB=new MyObject("John","Doe","john@gmail.com","jo123@2022");
 
-
-
- let addressB=new MyObject("John","Doe","john@gmail.com","jo123@2022");
-
- for(id in addressB){
-    console.log(`${id}:${addressB[id]}`);
- }
+//  for(id in addressB){
+//     console.log(`${id}:${addressB[id]}`);
+//  }
 
 
 
@@ -125,3 +123,10 @@ submit.addEventListener("click",(e)=>{
 
 
 })
+
+if(window.localStorage){
+   console.log("suported");
+}
+else{
+   console.log("not suported");
+}
